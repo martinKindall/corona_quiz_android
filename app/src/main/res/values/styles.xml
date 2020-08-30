@@ -1,0 +1,25 @@
+<resources>
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="FullImgToolbar">
+        <item name="android:background">@color/colorPrimaryDark</item>
+        <item name="android:homeAsUpIndicator">@drawable/ic_arrow_back_black_24dp</item>
+    </style>
+
+    <style name="EditTextInfo" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <item name="android:textColorHint">@color/colorPrimary</item>
+
+        <item name="colorControlNormal">@color/colorAccent</item>
+        <item name="colorControlActivated">@color/colorAccent</item>
+    </style>
+
+    <style name="AppThemeFirebaseAuth" parent="FirebaseUI">
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+</resources>

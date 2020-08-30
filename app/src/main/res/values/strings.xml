@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Corona Quiz</string>
+    <string name="username_already_exists">Name already exists</string>
+    <string name="username_too_short">Name is too short.</string>
+    <string name="game_play_again">Play again!</string>
+    <string name="game_main_menu">Back to menu</string>
+    <string name="game_keep_trying">Keep trying!</string>
+    <string name="game_result">You obtained %1$d out of %2$d correct answers.</string>
+    <string name="name">Name:\u0020</string>
+    <string name="best_score">Best score:\u0020</string>
+    <string name="no_score">No score yet!</string>
+    <string name="play_now">Play</string>
+    <string name="ranking_btn">Highscores</string>
+    <string name="logout">Logout</string>
+    <string name="about">About</string>
+    <string name="covornavirus_info_link">https://www.who.int/news-room/q-a-detail/q-a-coronaviruses</string>
+    <string name="covornavirus_info_text">You can find more info about COVID-19 here:</string>
+    <string name="share_app">Share app</string>
+    <string name="about_edit_text_hint">↪️Write a suggestion</string>
+    <string name="send">Send</string>
+    <string name="text_too_short">Error: Text too short</string>
+    <string name="thanks_for_suggestion">Thanks for your message!</string>
+    <string name="share_app_msg">\nPlay and learn about COVID-19 with this app\n\n</string>
+    <string name="share_app_hint">Choose one</string>
+    <string name="login_subtitle">How much do you know about COVID-19 ?</string>
+    <string name="congratulations">Congratulations!</string>
+    <string name="policy">https://martinkindall.github.io/policy_corona_quiz.html</string>
+</resources>

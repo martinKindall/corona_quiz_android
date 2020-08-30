@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.MainMenuFragment">
+
+    <LinearLayout
+        android:id="@+id/menu_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@id/menu_user_data"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_bold"
+            android:text="Corona Quiz"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="40sp"
+            />
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/ic_virus"
+            android:adjustViewBounds="true"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="300dp"
+        android:layout_height="2dp"
+        android:background="@color/colorPrimaryDark"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/menu_title"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/menu_user_data"
+        android:layout_width="match_parent"
+        android:layout_height="128dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/card_background"
+        android:focusableInTouchMode="true"
+        android:elevation="4dp"
+        app:layout_constraintBottom_toTopOf="@id/menu_buttons"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/menu_title">
+        <TextView
+            android:id="@+id/menu_user_data_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/name"
+            android:textColor="@android:color/white"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@id/menu_user_data_score"
+            app:layout_constraintRight_toLeftOf="@+id/menu_user_data_username"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+
+        <TextView
+            android:id="@+id/menu_user_data_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/best_score"
+            android:textColor="@android:color/white"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@id/menu_user_editname"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/menu_user_data_obtained_score"
+            app:layout_constraintTop_toBottomOf="@id/menu_user_data_name" />
+
+        <FrameLayout
+            android:id="@+id/menu_user_data_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@id/menu_user_data_name"
+            app:layout_constraintLeft_toRightOf="@id/menu_user_data_name"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/menu_user_data_name">
+
+            <TextView
+                android:id="@+id/menu_user_data_username_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textSize="22sp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/menu_user_data_edittext"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:textSize="20sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </FrameLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/menu_user_data_obtained_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@id/menu_user_data_score"
+            app:layout_constraintLeft_toRightOf="@id/menu_user_data_score"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/menu_user_data_score">
+
+            <TextView
+                android:id="@+id/menu_user_data_obtained_score_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="16sp"
+                android:paddingEnd="8sp"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                android:textSize="22sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/menu_user_data_score_icon"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/menu_user_data_score_icon"
+                android:layout_width="20sp"
+                android:layout_height="20sp"
+                android:layout_marginStart="6sp"
+                android:layout_marginTop="4sp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/ic_first_aid_solid"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/menu_user_data_no_score_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/no_score"
+                android:textSize="22sp"
+                android:textAlignment="center"
+                android:textColor="@android:color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <FrameLayout
+            android:id="@+id/menu_user_editname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="4dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent">
+            <ImageView
+                android:id="@+id/menu_user_editname_view"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/ic_edit_pencil"
+                android:tint="@android:color/white" />
+            <ProgressBar
+                android:id="@+id/menu_edit_spinner"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:indeterminate="true"
+                android:indeterminateTint="@android:color/white"
+                android:indeterminateTintMode="src_atop"
+                android:visibility="gone" />
+        </FrameLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/menu_buttons"
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        app:layout_constraintTop_toBottomOf="@id/menu_user_data"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+        <Button
+            android:id="@+id/startGameBtn"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:text="@string/play_now"
+            android:textSize="18sp"
+            app:icon="@drawable/ic_play_arrow_black_24dp"
+            app:iconTint="@android:color/white"
+            app:iconGravity="end"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/rankingsBtn"
+            />
+        <Button
+            android:id="@+id/rankingsBtn"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:text="@string/ranking_btn"
+            android:textSize="18sp"
+            app:icon="@drawable/ic_show_chart_black_24dp"
+            app:iconTint="@android:color/white"
+            app:iconGravity="end"
+            app:layout_constraintTop_toBottomOf="@id/startGameBtn"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/main_menu_about"
+            />
+        <Button
+            android:id="@+id/main_menu_about"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:text="@string/about"
+            android:textSize="18sp"
+            app:icon="@drawable/ic_info_black_24dp"
+            app:iconTint="@android:color/white"
+            app:iconGravity="end"
+            app:layout_constraintTop_toBottomOf="@id/rankingsBtn"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/main_menu_close_session"
+            />
+        <Button
+            android:id="@+id/main_menu_close_session"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:text="@string/logout"
+            android:textSize="18sp"
+            app:icon="@drawable/ic_exit_to_app_black_24dp"
+            app:iconTint="@android:color/white"
+            app:iconGravity="end"
+            app:layout_constraintTop_toBottomOf="@id/main_menu_about"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

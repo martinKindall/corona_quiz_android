@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Corona Quiz</string>
+    <string name="username_already_exists">Nombre ya existe.</string>
+    <string name="username_too_short">Nombre muy corto.</string>
+    <string name="game_play_again">Jugar de nuevo</string>
+    <string name="game_main_menu">Volver al menú</string>
+    <string name="game_keep_trying">Sigue intentando!</string>
+    <string name="game_result">Tuviste %1$d de %2$d preguntas correctas.</string>
+    <string name="name">Nombre:\u0020</string>
+    <string name="best_score">Mejor Puntaje:\u0020</string>
+    <string name="no_score">Aún no has jugado!</string>
+    <string name="play_now">Jugar</string>
+    <string name="ranking_btn">Ranking</string>
+    <string name="logout">Cerrar sesión</string>
+    <string name="about">Acerca de</string>
+    <string name="covornavirus_info_link">https://www.who.int/es/emergencies/diseases/novel-coronavirus-2019/advice-for-public/q-a-coronaviruses</string>
+    <string name="covornavirus_info_text">Puede encontrar más información sobre el COVID-19 acá:</string>
+    <string name="share_app">Compartir app</string>
+    <string name="about_edit_text_hint">↪️Escribe aquí tus sugerencias</string>
+    <string name="send">Enviar</string>
+    <string name="text_too_short">Error: Texto muy corto</string>
+    <string name="thanks_for_suggestion">Gracias por tu mensaje!</string>
+    <string name="share_app_msg">\nJuega y aprende sobre el COVID-19 con esta app\n\n</string>
+    <string name="share_app_hint">Elige uno</string>
+    <string name="login_subtitle">¿Cuánto sabes acerca del COVID-19 ?</string>
+    <string name="congratulations">Perfecto!</string>
+    <string name="policy">https://martinkindall.github.io/politica_corona_quiz.html</string>
+</resources>
